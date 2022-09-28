@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const url = 'mongodb://127.0.0.1/SocialDB'
+//const url = 'mongodb://127.0.0.1/SocialDB'
+const url = 'mongodb+srv://sujith:1234567890@clustersujith.oplqxxi.mongodb.net/?retryWrites=true&w=majority'
 
 const app = express()
 
