@@ -115,7 +115,7 @@ router.post('/authenticate', async(req,res) => {
           const currentUser = await User.findById(req.user.id);
           const follower =currentUser.followers.length;
           const following =currentUser.followings.length;
-          const profile={Username:req.user.userId,"Number of followers":follower,"Number of followings":following}
+          const profile={Username:currentUser.username,"Number of followers":follower,"Number of followings":following}
            res.json(profile)
     }catch(err){
         res.send('Error ' + err)
