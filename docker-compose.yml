@@ -15,6 +15,7 @@ services:
     ports:
       - 9000:9000
     environment:
+      ACCESS_TOKEN_SECRET: VjocVHdFiz5vGHnlnwqJKN0NdeHcz8eM
       PORT: 9000
       MONGODB_URI: mongodb://mongo_db/my_db
     depends_on:
